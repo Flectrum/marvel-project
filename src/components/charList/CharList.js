@@ -9,7 +9,7 @@ import './charList.scss';
 
 const CharList = (props) => {
 
-    const [charList, setCharlist] = useState([]);
+    const [charList, setCharlist] = useState([{id: 'zkkd34', name: 'Garrrik', description: 'Old friend with some strange history', thumbnail: 'https://scontent-hel3-1.xx.fbcdn.net/v/t31.18172-8/475015_285576211521407_1091775429_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=t5PXCUNxwHQAX-M7o8v&_nc_ht=scontent-hel3-1.xx&oh=00_AfDYYFKEtvZw-L6HpoGSRG9JsVMzAMrDLhcOQNJ-eOvYDw&oe=661BC8A7' }]);
     const [newItemLoading, setNewItemLoading] = useState(false);
     const [offset, setOffset] = useState(210);
     const [charEnded, setCharEnded] = useState(false);
