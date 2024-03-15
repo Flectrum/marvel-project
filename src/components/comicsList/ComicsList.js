@@ -32,10 +32,14 @@ const ComicsList = () => {
             .then(onComicsListLoaded);
     }
 
+    // useEffect(() => {
+    //     return () => {
+    //         onRequest(offset, true);
+    //     }
+    // }, []);
+
     useEffect(() => {
-        return () => {
             onRequest(offset, true);
-        }
     }, []);
 
     function renderItems(arr) {

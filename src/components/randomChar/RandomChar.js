@@ -12,11 +12,16 @@ const RandomChar = () => {
     
     const {loading, error, clearError, getCharacter} =  useMarvelService();
 
+    // useEffect(() => {
+    //     return () => {
+    //     updateChar()
+    //     }
+    // }, [])
+
     useEffect(() => {
-        return () => {
         updateChar()
-        }
     }, [])
+
 
     const onCharLoaded = (char) => {
         setChar(char);
